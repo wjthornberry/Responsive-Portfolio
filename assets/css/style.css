@@ -247,19 +247,32 @@ input[type=submit] {
   
   }
 
+  #logo {
+    margin-left: 80px;
+  }
+
+  nav {
+    margin-right: 80px;
+  }
+
   .wrapper {
     /* Box-model */
     width: 100%;
     padding: 20px;
   }
 
-  #main-content,
-  #sidebar {
-    width: 100%;
-  }
+  .main.main-section {
+    margin-left: 80px;
+    max-width: 475px;  
+ }
 
-  #sidebar {
-    margin-top: 40px;
+  .sidebar {
+    margin-right: 80px;   
+  }
+  
+  .main-section {
+    margin-left: 80px;
+    max-width: 475px;
   }
 }
 
@@ -291,6 +304,10 @@ input[type=submit] {
 @media screen and (max-width: 640px) {
   body {
     
+  }
+
+  #masthead {
+    position: static;
   }
 
   .wrapper {
