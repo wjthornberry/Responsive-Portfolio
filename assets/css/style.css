@@ -241,11 +241,15 @@ input[type=submit] {
 /* Media Query Assignment for Responsiveness*/
 
 /* 
-The hw notes say that "You won't need to use exact pixels 
+Comment 1: The hw notes say that "You won't need to use exact pixels 
 for anything other than the container,"" but I had to use px;
 After submitting this I will perform my due dilligence to 
 learn how I could've done this better per the hint, but would
 also love some feedback on I could've done this. Thanks! 
+
+Comment 2: On the portfolio page, I can't get the teal box to surround the text AND place it on top of the img; thoughts?
+
+Comment 3: Still trying to get the teal box in the header to fit my entire name; right now, it can only fit my first name.
 */
 
 /* Width at 980px and below */
@@ -258,12 +262,6 @@ also love some feedback on I could've done this. Thanks!
 
   nav {
     margin-right: 80px;
-  }
-
-  .wrapper {
-    /* Box-model */
-    width: 100%;
-    padding: 20px;
   }
 
   .main.main-section {
@@ -294,18 +292,11 @@ also love some feedback on I could've done this. Thanks!
     margin-right: 20px;
   }
 
-  .wrapper {
-    /* Box-model */
-    width: 100%;
-    padding: 20px;
-  }
-
   .main.main-section {
     max-width: 725px;
     margin-left: 20px 
  }
 
- 
   /* 
   Below: Tried moving the sidebar up so that 
   the margin between it and the content "above" it, 
@@ -319,33 +310,39 @@ also love some feedback on I could've done this. Thanks!
   }
   
   .main-section {
-    margin-left: 80px;
-    max-width: 475px;
+    max-width: 725px;
+    margin-left: 20px;
   }
 }
 
 /* Width at 640px and below */
 @media screen and (max-width: 640px) {
-  body {
-    
-  }
 
   #masthead {
     position: static;
   }
 
-  .wrapper {
-    /* Box-model */
-    width: 100%;
-    padding: 20px;
+#logo {
+    margin-left: 20px;
   }
 
-  #main-content,
-  #sidebar {
-    width: 100%;
+  nav {
+    margin-right: 20px;
   }
 
-  #sidebar {
-    margin-top: 40px;
+  .main.main-section {
+    max-width: 725px;
+    margin-left: 20px 
+ }
+
+  .sidebar {
+    float: left;
+    max-width: 725px;
+    margin-left: 20px;
+  }
+  
+  .main-section {
+    max-width: 725px;
+    margin-left: 20px;
   }
 }
