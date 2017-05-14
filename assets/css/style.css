@@ -248,9 +248,7 @@ After submitting this I will perform my due dilligence to
 learn how I could've done this better per the hint, but would
 also love some feedback on I could've done this. Thanks! 
 
-Comment 2: On the portfolio page, I can't get the teal box to surround the text AND place it on top of the img; thoughts?
-
-Comment 3: Still trying to get the teal box in the header to fit my entire name; right now, it can only fit my first name.
+Comment 2: Still trying to get the teal box in the header to fit my entire name; right now, it can only fit my first name.
 */
 
 /* Width at 980px and below */
@@ -316,7 +314,9 @@ Comment 3: Still trying to get the teal box in the header to fit my entire name;
   }
 }
 
-/* Width at 640px and below */
+/* Width at 640px and below
+Note: Looks like example at 640px but not below it.*/
+
 @media screen and (max-width: 640px) {
 
   #masthead {
