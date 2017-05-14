@@ -171,6 +171,7 @@ h3,
 }
 
 .work img {
+  border: solid blue;
   width: 100%;
   border: 0 none;
   opacity: 0.8;
@@ -319,30 +320,54 @@ Comment 3: Still trying to get the teal box in the header to fit my entire name;
 @media screen and (max-width: 640px) {
 
   #masthead {
+    width: 100%;
     position: static;
+    overflow: auto;
+    margin-left: 0px;
+    padding: 0px;
+    margin: 0 0 0px;
   }
-
-#logo {
-    margin-left: 20px;
+  
+  #logo {
+    width: 100%;
+    margin-left: 0px;
   }
 
   nav {
+    float: left;
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  nav a {
+    padding-left: 75px;
+    padding-right: 30px;
+    margin-left: 15px;
+  }
+
+  #main-container {
+    padding-top: 20px;
+  }
+
+  .main-section {
+    max-width: 600px;
+    padding: 20px;
     margin-right: 20px;
+  /*margin: 0 0 40px;*/
+  }
+
+  .work {
+  width: 100%;
   }
 
   .main.main-section {
-    max-width: 725px;
+    max-width: 600px;
     margin-left: 20px 
- }
+  }
 
   .sidebar {
     float: left;
-    max-width: 725px;
-    margin-left: 20px;
-  }
-  
-  .main-section {
-    max-width: 725px;
-    margin-left: 20px;
+    max-width: 600px;
+    margin-bottom: 20px;
   }
 }
